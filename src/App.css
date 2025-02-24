@@ -20,7 +20,7 @@
 
 .myName {
   margin-left: 100px;
-  margin-top: 200px;
+  margin-top: 150px;
   letter-spacing: 5px;
 }
 
@@ -494,6 +494,9 @@ button:hover {
   }
 
   .homeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.750);
     height: 35vh;
@@ -524,15 +527,15 @@ button:hover {
   .myName .role{
     display: flex;
     align-self: center;
+    letter-spacing: 2.4px;
   }
 
-  .greet {
+  .myName .greet {
     display: flex;
     align-self: left;
-    justify-self: left;
-    margin: 0px 0px 0px 30px;
+    margin: 0px 0px 0px 20px;
     padding: 0;
-    font-size: 20px;
+    font-size: 17px;
   }
 
   .icons{
@@ -693,7 +696,7 @@ button:hover {
 
   /* Contact Footer Mobile Screen */
   .contactForm{
-    margin-top: 77px;
+    margin-top: 60px;
   }
   .footer{
     height: 20vh;
@@ -702,48 +705,67 @@ button:hover {
 
 /* For More Smaller Mobile Screen */
 @media (max-width: 400px){
+
+  .image {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateX(-0%);
+    z-index: 1;
+  }
+
+  .myImage {
+    height: 85vh;
+    width: 100%;
+    object-fit: cover;
+    z-index: 2;
+  }
+
+  .homeContent {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.750);
+    height: 40vh;
+    width: 100vw;
+    margin: 0;
+    border: none;
+    padding: 0;
+    bottom: 0px;
+    left: 0px;
+    color: #d7d7d7;
+    z-index: 3;
+    clip-path: polygon(0% 0%, 100% 30%, 100% 100%, 0% 100%);
+  }
+
   .myName {
     margin: 11% 0% 0% 0%;
     display: flex;
     flex-direction: column;
   }
 
+  .greet{
+    margin-left: 50px;
+    font-size: 15px;
+  }
+
   .myName .name {
     display: flex;
     align-self: center;
     font-weight: bold;
-    font-size: 40px;
-    margin-top: 2.7vh;
+    font-size: 35px;
+    margin-top: 2.4vh;
     letter-spacing: 7px;
   }
-  .icons{
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    align-self: left;
-    gap: 20px;
-    position: absolute;
-    bottom: 26px;
-    left: 25px;
-    z-index: 3;
-  }
+
   .icons a{
     color: #d7d7d7;
     margin: 0;
     padding: 0;
   }
 
-  .btn{
-    margin: 0;
-    display: flex;
-    position: absolute;
-    bottom: 25px;
-    z-index: 3;
-  }
-
   .btnCv{
     color: white;
-    margin-left: 145px;
+    padding: 3px 8px;
     border-right: 3px solid #d7d7d7;
     border-left: 3px solid #d7d7d7;
     

@@ -1,4 +1,5 @@
 import React from 'react'
+import myPic from '../../Assets/Images/myPic.png'
 
 export const Home = () => {
 
@@ -24,7 +25,7 @@ export const Home = () => {
 
             </div>
             <div className="image">
-                <img src='/Images/myPic.png' className='myImage' alt="" />
+                <img src={myPic} className='myImage' alt="" />
             </div>
             <div className="btn">
                 <button className="btnCv">

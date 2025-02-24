@@ -1,5 +1,4 @@
 import React from "react";
-import { Prev } from "react-bootstrap/esm/PageItem";
 
 export const About = () => {
     return (
