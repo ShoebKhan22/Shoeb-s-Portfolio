@@ -9,7 +9,7 @@
   width: 100vw;
   display: inline-block;
   background: linear-gradient(100deg, #d7d7d7 50%, #000000 50%);
-  padding-left: 100px;
+  padding-left: 2rem;
   font-family: "Raleway", sans-serif;
 }
 
@@ -226,11 +226,18 @@ p {
 
 .skills {
   width: 100vw;
-  display: inline-block;
-  align-content: center;
+  height: auto;
+  display: flex;
+  flex-direction: column;
   justify-items: center;
+  align-content: center;
   background: radial-gradient(#fdfdfd 5%, #d7d7d7 95%);
   padding-bottom: 30px;
+}
+
+.skillContainer{
+  display: flex;
+  align-self: center;
 }
 
 .skills p{
@@ -238,9 +245,13 @@ p {
   font-weight: 300;
 }
 
-.usingSkill {
+.usingSkill, .learningSkill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 40px;
 }
+
 .usedSkillsDiv{
   margin-top: 20px;
 }
@@ -256,6 +267,9 @@ p {
 
 .skills h3{
   letter-spacing: 3px;
+  display: flex;
+  align-self: normal;
+  margin-left: 10vw;
 }
 
 @media (max-width: 1024px) {
@@ -314,8 +328,10 @@ p {
 .projects {
   width: 100vw;
   height: auto;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   justify-items: center;
+  align-items: center;
   background: radial-gradient(#fdfdfd 5%, #d7d7d7 95%);
 }
 
@@ -578,9 +594,6 @@ button:hover {
   }
 
   /* AboutContainer */
-  .aboutContainer{
-
-  }
 
   /* About Screen */
   .aboutMeDtl{
@@ -770,4 +783,25 @@ button:hover {
     border-left: 3px solid #d7d7d7;
     
   }
+}
+
+@media (max-width: 1200px) and (min-width: 991px) {
+  .home{
+    background: linear-gradient(140deg, #d7d7d7 50%, #000000 50%);
+    width: 100vw;
+  }
+  .image {
+    display: inline-block;
+    position: absolute;
+    left: 30vw;
+    bottom: 0;
+    overflow-x: hidden;
+}
+
+.myImage {
+    display: inline-block;
+    height: 60vh;
+    width: auto;
+    object-fit: cover;
+}
 }

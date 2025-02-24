@@ -25,7 +25,7 @@ export const Home = () => {
 
             </div>
             <div className="image">
-                <img src={myPic} className='myImage' alt="" />
+                <img src={myPic} className='myImage' alt={myPic} />
             </div>
             <div className="btn">
                 <button className="btnCv">
